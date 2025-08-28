@@ -1,7 +1,8 @@
 const body = document.body;
-
+const text = "Wow!"
 const textToChange = document.querySelector(h1);
-textToChange:hover
-textToChange.textContent = "Wow!"
 
-document.head.appendChild(textToChange)
+textToChange.addEventListener("hover", () => {
+    textToChange.textContent = text
+    document.head.appendChild(textToChange)
+})
