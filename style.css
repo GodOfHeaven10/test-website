@@ -6,6 +6,7 @@ h1 {
 .hover,
 #objects:hover {
     background-color: gray;
+    color: black;
 }
 
 [type="div"],
@@ -17,5 +18,8 @@ h1 {
     width: 250px;
     height: 50px;
     align-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
