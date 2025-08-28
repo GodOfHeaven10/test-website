@@ -1,3 +1,15 @@
 h1 {
     color: linear-gradient(to right, red, violet);
 }
+
+[type="div"],
+.hover,
+#objects:hover {
+    background-color: gray;
+}
+
+[type="div"],
+.hover,
+#objects {
+    background-color: black;
+}
