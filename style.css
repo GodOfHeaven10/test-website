@@ -12,4 +12,8 @@ h1 {
 .hover,
 #objects {
     background-color: black;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-size: 50px, 250px;
 }
+
