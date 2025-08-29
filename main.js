@@ -1,5 +1,5 @@
 const body = document.body;
-const oldText = document.querySelector(h1).textContent;
+//const oldText = document.querySelector(h1).textContent;
 const text = "Wow!";
 const textToChange = document.querySelector(h1);
 //forget this under this, lets do more fun manipulation
