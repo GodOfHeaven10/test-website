@@ -36,3 +36,6 @@ const textBox = document.querySelector(textBox)
 if (textBox != null) {
     console.log(textBox)
 }
+
+const buttontg = document.body.querySelector(button)
+buttontg.addEventListener('click', tg)
