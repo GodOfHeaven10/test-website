@@ -30,3 +30,9 @@ for (i in buttons) {
     button.textContent = buttons[i]
     body.appendChild(button)
 }
+
+const textBox = document.querySelector(textBox)
+
+if (textBox != null) {
+    console.log(textBox)
+}
