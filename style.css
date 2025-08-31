@@ -43,9 +43,8 @@ h1 {
 
 .Nav {
     margin: 0 auto;
-    display: inline;
-    padding-inline-start: 0px;
-    padding-inline-end: 0px;
+    display: flex;
+    padding: 10px;
     padding: 10px;
 }
 
@@ -60,4 +59,19 @@ h1 {
     border-radius: 10px;
     outline: 2.5px solid #000;
     align-content: center;
+}
+
+.NavButtons,
+#Triggers {
+    margin-right: 10px;
+}
+
+.NavButtons,
+#Animate{
+    margin: 0px 10px;
+}
+
+.NavButtons,
+#Settings {
+    margin-left: 10px;
 }
