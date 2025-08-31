@@ -31,19 +31,19 @@ for (i in buttons) {
     body.appendChild(button)
 }
 
-const textBox = document.querySelector(textBox)
+//const textBox = document.querySelector(textBox)
 
-if (textBox != null) {
-    console.log(textBox)
-}
+//if (textBox != null) {
+//    console.log(textBox)
+//}
 
-const buttontg = document.body.querySelector(button)
-buttontg.addEventListener('click', tg)
+//const buttontg = document.body.querySelector(button)
+//buttontg.addEventListener('click', tg)
 
 
 const hoverTarget = document.getElementById("Hover-Test")
 hoverTarget.style.backgroundColor = "gray"
 
-hoverTarget.addEventListener("mouseover", (e) => {
-    e.target.style.backgroundColor = "red"
+hoverTarget.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor = "red";
 })
