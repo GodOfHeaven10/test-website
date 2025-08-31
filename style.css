@@ -61,17 +61,13 @@ h1 {
     align-content: center;
 }
 
-.NavButtons,
-#Triggers {
+.NavButtons #Triggers {
     margin-right: 10px;
 }
 
-.NavButtons,
-#Animate{
+.NavButtons #Animate {
     margin: 0px 10px;
 }
-
-.NavButtons,
-#Settings {
+.NavButtons #Settings {
     margin-left: 10px;
 }
