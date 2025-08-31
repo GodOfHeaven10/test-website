@@ -39,3 +39,11 @@ if (textBox != null) {
 
 const buttontg = document.body.querySelector(button)
 buttontg.addEventListener('click', tg)
+
+
+const hoverTarget = document.getElementById("Hover-Test")
+hoverTarget.style.backgroundColor = "gray"
+
+hoverTarget.addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor = "red"
+})
