@@ -28,11 +28,11 @@ triggers.addEventListener('mouseout', (event) => {
 })
 
 triggers.addEventListener('click', (event) => {
-    if (triggerstriggered != 0) {
+    if (triggerstriggered != 1) {
         triggerstriggered = 1
         event.target.style.backgroundColor = "#a3a3a3ff"
         event.target.style.color = "#1E1E1E"
-    } else {
+    } else if (triggerstriggered != 0) {
         triggerstriggered = 0
         event.target.style.backgroundColor = "#1E1E1E"
         event.target.style.color = "#FFF"
