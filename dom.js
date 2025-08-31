@@ -13,16 +13,29 @@ hoverTarget.addEventListener("mouseout", (event) => {
 })
 
 const triggers = document.getElementById("Triggers")
+let triggerstriggered = 0
 
 triggers.addEventListener('mouseover', (event) => {
-    event.target.style.backgroundColor = "#555555ff"
+    if (triggerstriggered != 1) {
+        event.target.style.backgroundColor = "#555555ff"
+    }
 })
 
 triggers.addEventListener('mouseout', (event) => {
-    event.target.style.backgroundColor = "#1E1E1E"
+    if (triggerstriggered != 1) {
+        event.target.style.backgroundColor = "#1E1E1E"
+    }
 })
 
 triggers.addEventListener('click', (event) => {
-    event.target.style.backgroundColor = "#a3a3a3ff"
-    event.target.style.color = "#1E1E1E"
+    if (triggerstriggered != 0) {
+        triggerstriggered = 1
+        event.target.style.backgroundColor = "#a3a3a3ff"
+        event.target.style.color = "#1E1E1E"
+    } else {
+        triggerstriggered = 0
+        event.target.style.backgroundColor = "#1E1E1E"
+        event.target.style.color = "#FFF"
+    }
+    
 })
