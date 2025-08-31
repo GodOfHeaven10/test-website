@@ -42,14 +42,15 @@ h1 {
 }
 
 .Nav {
+    text-align: center;
     background-color: #1E1E1E;
     color: #Fff;
     font-family: "Quicksand", sans-serif;
     font-size: 20px;
     width: 100px;
     height: 40px;
-    border-radius: 2.5px;
-    outline: 10px solid #000;
+    border-radius: 10px;
+    outline: 2.5px solid #000;
     padding-right: 12.5px;
     margin: 0 auto;
 }
