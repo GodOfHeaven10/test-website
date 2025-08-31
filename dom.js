@@ -6,5 +6,5 @@ hoverTarget.addEventListener("mouseover", (event) => {
 })
 
 hoverTarget.addEventListener("mouseout", (event) => {
-    enet.target.style.backgroundColor = oldColor
+    event.target.style.backgroundColor = oldColor
 })
