@@ -42,7 +42,7 @@ h1 {
 }
 
 .Nav {
-    margin: 0 auto;
+    justify-content: center;
     display: flex;
     padding: 10px;
     padding: 10px;
