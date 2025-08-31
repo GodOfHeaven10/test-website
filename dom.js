@@ -1,6 +1,10 @@
 const hoverTarget = document.getElementById("Hover-Test")
-hoverTarget.style.backgroundColor = "gray"
-
+hoverTarget.style.backgroundColor = oldColor
+var oldColor = "gray"
 hoverTarget.addEventListener("mouseover", (event) => {
     event.target.style.backgroundColor = "red";
+})
+
+hoverTarget.addEventListener("mouseout", (event) => {
+    enet.target.style.backgroundColor = oldColor
 })
