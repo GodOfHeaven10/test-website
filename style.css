@@ -51,6 +51,6 @@ h1 {
     height: 40px;
     border-radius: 10px;
     outline: 2.5px solid #000;
-    padding-right: 12.5px;
     margin: 0 auto;
+    align-content: center;
 }
