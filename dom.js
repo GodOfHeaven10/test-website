@@ -11,3 +11,5 @@ hoverTarget.addEventListener("mouseover", (event) => {
 hoverTarget.addEventListener("mouseout", (event) => {
     event.target.style.backgroundColor = oldColor
 })
+
+const navigation = document.getElementsByClassName("Nav")

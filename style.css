@@ -1,3 +1,7 @@
+body {
+    background-color: #1E1E1E;
+}
+
 h1 {
     color: linear-gradient(to right, red, violet);
 }
@@ -35,4 +39,16 @@ h1 {
     border-radius: 10px;
     width: 155px;
     height: 55px;
+}
+
+.Nav {
+    background-color: #1E1E1E;
+    color: #Fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 5px;
+    width: 50px;
+    height: 25px;
+    border-color: #000;
+    border-radius: 5px;
+    border-width: 2.5px;
 }
