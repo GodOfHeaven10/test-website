@@ -12,17 +12,17 @@ hoverTarget.addEventListener("mouseout", (event) => {
     event.target.style.backgroundColor = oldColor
 })
 
-const navigation = document.getElementsByClassName("Nav")
+const triggers = document.getElementById("Triggers")
 
-navigation.getElementById("Triggers").addEventListener('mouseover', (event) => {
+triggers.addEventListener('mouseover', (event) => {
     event.target.style.backgroundColor = "#555555ff"
 })
 
-navigation.getElementById("Triggers").addEventListener('mouseout', (event) => {
+triggers.addEventListener('mouseout', (event) => {
     event.target.style.backgroundColor = "#1E1E1E"
 })
 
-navigation.getElementById("Triggers"). addEventListener('click'), (event) => {
+triggers.addEventListener('click', (event) => {
     event.target.style.backgroundColor = "#a3a3a3ff"
     event.target.style.color = "#1E1E1E"
-}
+})
