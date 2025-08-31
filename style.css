@@ -25,3 +25,15 @@ h1 {
     border-radius: 10px;
     background-color: hsl(hue, saturation, lightness);
 }
+
+#Hover-Test {
+    align-self: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    width: fit-content+25px;
+    height: fit-content+25px;
+}
