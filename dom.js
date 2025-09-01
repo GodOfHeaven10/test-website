@@ -14,7 +14,7 @@ hoverTarget.addEventListener("mouseout", (event) => {
 
 const triggers = document.getElementById("Triggers")
 let triggerstriggered = 0
-
+//Triggers button
 triggers.addEventListener('mouseover', (event) => {
     if (triggerstriggered != 1) {
         event.target.style.backgroundColor = "#555555ff"
@@ -32,8 +32,7 @@ triggers.addEventListener('click', (event) => {
         event.target.style.backgroundColor = "#a3a3a3ff"
         event.target.style.color = "#1E1E1E"
         triggerstriggered = 1
-    } 
-    if (triggerstriggered != 0) {
+    } else {
         event.target.style.backgroundColor = "#1E1E1E"
         event.target.style.color = "#FFF"
         triggerstriggered = 0
