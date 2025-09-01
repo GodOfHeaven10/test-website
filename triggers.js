@@ -38,6 +38,10 @@ triggers.addEventListener('click', (event) => {
         event.target.style.color = "#FFF"
         triggerstriggered = 0
     }
+
+    if (animatetriggered == 1) {
+        animatetriggered = 0
+    }
 })
 
 
