@@ -41,16 +41,7 @@ triggers.addEventListener('click', (event) => {
     }
 })
 
-function ButtonClickFunc(obj, value) {
-    if (value != 1) {
-        obj.style.backgroundColor = "#a3a3a3ff"
-        obj.style.color = "#1E1E1E"
-    } else if (value != 0)
-        obj.style.backgroundColor = "#1E1E1E"
-        obj.style.color = "#FFF"
-    }
-}
-
+//Animate button
 animate.addEventListener('mouseover', (event) => {
     if (animatetriggered != 1) {
         event.target.style.backgroundColor = "#555555ff"
@@ -65,9 +56,46 @@ animate.addEventListener('mouseout', (event) => {
 
 animate.addEventListener('click', (event) => {
     if (animatetriggered != 1) {
-        ButtonClickFunc(event.target, 1)
-    } else if (animatetriggered != 0) {
-        ButtonClickFunc(event.target, 0)
+        event.target.style.backgroundColor = "#a3a3a3ff"
+        event.target.style.color = "#1E1E1E"
+        animatetriggered = 1
+    } else {
+        event.target.style.backgroundColor = "#1E1E1E"
+        event.target.style.color = "#FFF"
+        animatetriggered = 0
     }
-    
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ButtonClickFunc(obj, value) {
+    if (value != 1) {
+        obj.style.backgroundColor = "#a3a3a3ff"
+        obj.style.color = "#1E1E1E"
+    } else if (value != 0)
+        obj.style.backgroundColor = "#1E1E1E"
+        obj.style.color = "#FFF"
+    }
+}
+
