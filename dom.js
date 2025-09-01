@@ -13,7 +13,9 @@ hoverTarget.addEventListener("mouseout", (event) => {
 })
 
 const triggers = document.getElementById("Triggers")
+const animate = document.getElementById("Animate")
 let triggerstriggered = 0
+let animatetriggered = 0
 //Triggers button
 triggers.addEventListener('mouseover', (event) => {
     if (triggerstriggered != 1) {
@@ -37,4 +39,35 @@ triggers.addEventListener('click', (event) => {
         event.target.style.color = "#FFF"
         triggerstriggered = 0
     }
+})
+
+function ButtonClickFunc(obj, value) {
+    if (value != 1) {
+        obj.style.backgroundColor = "#a3a3a3ff"
+        obj.style.color = "#1E1E1E"
+    } else if (value != 0)
+        obj.style.backgroundColor = "#1E1E1E"
+        obj.style.color = "#FFF"
+    }
+}
+
+animate.addEventListener('mouseover', (event) => {
+    if (animatetriggered != 1) {
+        event.target.style.backgroundColor = "#555555ff"
+    }
+})
+
+animate.addEventListener('mouseout', (event) => {
+    if (animatetriggered != 1) {
+        event.target.style.backgroundColor = "#1E1E1E"
+    }
+})
+
+animate.addEventListener('click', (event) => {
+    if (animatetriggered != 1) {
+        ButtonClickFunc(event.target, 1)
+    } else if (animatetriggered != 0) {
+        ButtonClickFunc(event.target, 0)
+    }
+    
 })
