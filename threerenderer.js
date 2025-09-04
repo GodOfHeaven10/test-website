@@ -24,10 +24,7 @@ const twowallgeometry = new THREE.BoxGeometry(1, 7.5, 4);
 const twowallmaterial = new THREE.MeshBasicMaterial({color: 0xC7C7C7});
 const twowall = new THREE.Mesh(twowallgeometry, twowallmaterial);
 
-scene.add(platform);
-scene.add(backwall);
-scene.add(onewall);
-scene.add(twowall);
+scene.add(platform, backwall, onewall, twowall);
 
 //platform is already in-position
 
