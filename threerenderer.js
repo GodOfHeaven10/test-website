@@ -3,7 +3,7 @@ import * as THREE from 'three';
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-const renderer = new THREE.WebGLRenderer(scene, alpha: true);
+const renderer = new THREE.WebGLRenderer({scene, alpha: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
@@ -24,32 +24,23 @@ const twowallgeometry = new THREE.BoxGeometry(1, 7.5, 4);
 const twowallmaterial = new THREE.MeshBasicMaterial({color: 0xC7C7C7});
 const twowall = new THREE.Mesh(twowallgeometry, twowallmaterial);
 
-scene.add(plaform);
+scene.add(platform);
 scene.add(backwall);
 scene.add(onewall);
 scene.add(twowall);
 
 //platform is already in-position
 
-backwall.position.x = 0;
-backwall.position.y = 4.25;
-backwall.position.z = -2;
 
-onewall.position.x = -4.5;
-onewall.position.y = 4.25;
-onewall.position.z = 0.5;
-
-twowall.position.x = 4.5;
-twowall.position.y = 4.25;
-twowall.position.z = 0.5;
+backwall.position.set(0, 4.25, -2)
+onewall.position.set(-4.5, 4.25, 0.5)
+twowall.position.set(4.5, 4.25, 0.5)
 
 camera.position.x = -10;
 camera.position.z = 5;
 camera.position.y = 10;
 
-camera.rotation.x = -20;
-camera.rotation.y = -45;
-camera.rotation.z = -10;
+camera.lookAt(platform)
 
 function animate() {
     //cube.rotation.x += 0.01;
