@@ -31,17 +31,17 @@ scene.add(twowall);
 
 //platform is already in-position
 
-backwall.position.x = 0
-backwall.position.y = 4.25
-backwall.position.z = -2
+backwall.position.x = 0;
+backwall.position.y = 4.25;
+backwall.position.z = -2;
 
-onewall.position.x = -4.5
-onewall.position.y = 4.25
-onewall.position.z = 0.5
+onewall.position.x = -4.5;
+onewall.position.y = 4.25;
+onewall.position.z = 0.5;
 
-twowall.position.x = 4.5
-twowall.position.y = 4.25
-twowall.position.z = 0.5
+twowall.position.x = 4.5;
+twowall.position.y = 4.25;
+twowall.position.z = 0.5;
 
 camera.position.x = -10;
 camera.position.z = 5;
