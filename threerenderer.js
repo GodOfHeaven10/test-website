@@ -32,7 +32,7 @@ backwall.position.set(0, 4.25, -2)
 onewall.position.set(-4.5, 4.25, 0.5)
 twowall.position.set(4.5, 4.25, 0.5)
 
-camera.position.set(-10, 5, 10)
+camera.position.set(-20, 10, 20)
 
 camera.lookAt(platform)
 
