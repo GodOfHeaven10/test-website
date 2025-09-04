@@ -41,7 +41,7 @@ for (i in buttons) {
 //buttontg.addEventListener('click', tg)
 
 
-const hoverTarget = document.getElementById("Hover-Test")
+//const hoverTarget = document.getElementById("Hover-Test")
 hoverTarget.style.backgroundColor = "gray"
 
 hoverTarget.addEventListener("mouseover", (event) => {
