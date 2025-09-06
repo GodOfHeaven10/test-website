@@ -70,10 +70,10 @@ renderer.domElement.addEventListener("mousemove", (event) => {
     if (!isDragging) return;
 
     const deltaX = event.clientX - previousMousePos.x;
-    pivotObject.rotation.y += deltaX * 0.01;
+    pivotObject.rotateY(deltaX * 0.01) //+= deltaX * 0.01;
 
     const deltaY = event.clientY - previousMousePos.y;
-    pivotObject.rotation.x += deltaY * 0.01;
+    pivotObject.rotateX(deltaY * 0.01) //+= deltaY * 0.01;
 
     previousMousePos = {x: event.clientX, y: event.clientY};
 })
