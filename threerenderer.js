@@ -8,7 +8,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 //Platform Creation
-const platformgeometry = new THREE.BoxGeometry(10, 5, 1);
+const platformgeometry = new THREE.BoxGeometry(10, 1, 5);
 const platformmaterial = new THREE.MeshBasicMaterial({color: 0x525252});
 const platform = new THREE.Mesh(platformgeometry, platformmaterial);
 
