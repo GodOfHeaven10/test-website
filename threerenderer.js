@@ -36,21 +36,23 @@ camera.position.set(-20, 10, 20)
 
 camera.lookAt(0, 4, 0)
 
+document.addEventListener("keydown", (event) => {
+    const keyName = event.key.toUpperCase()
+
+    if (keyName === "A") {
+        scene.rotation.y -= 0.01;
+        renderer.render(scene, camera)
+    } else if (keyName === "D") {
+        scene.rotation.y += 0.01;
+        renderer.render(scene, camera)
+    }
+})
+
 function animate() {
     //cube.rotation.x += 0.01;
     //cube.rotation.y += 0.01;
     //scene.rotation.y += 0.01;
     renderer.render(scene, camera);
+    requestAnimationFrame(animate)
 }
-
-document.addEventListener("keydown", (event) => {
-    const keyName = event.key
-
-    if (keyName.toUpperCase() === "A") {
-        scene.rotation.y -= 0.01;
-        renderer.render(scene, camera)
-    } else if (keyName.toUpperCase() === "D") {
-        scene.rotation.y += 0.01;
-        renderer.render(scene, camera)
-    }
-})
+animate()
