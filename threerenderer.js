@@ -48,6 +48,30 @@ document.addEventListener("keydown", (event) => {
     }
 })
 
+let isDragging = false;
+let previousMousePos = {x: 0, y: 0};
+
+//required: mousedown, mouseup, mousemove
+//stage dragging/spinning/rotating
+
+renderer.domElement.addEventListener("mousedown", (event) => {
+    isDragging = true;
+    previousMousePos = {x: event.clientX, y: event.clientY};
+})
+
+window.addEventListener("mouseup", (event) => {
+    isDragging = false;
+})
+
+renderer.domElement.addEventListener("mousemove", (event) => {
+    if (!isDragging) return;
+
+    const deltaX = event.clientX - previousMousePos.x;
+    scene.rotation.x += deltaX * 0.01;
+
+    previousMousePos = {x: event.clientX, y: event.clientY};
+})
+
 function animate() {
     //cube.rotation.x += 0.01;
     //cube.rotation.y += 0.01;
