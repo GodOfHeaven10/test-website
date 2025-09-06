@@ -8,6 +8,9 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 //Platform Creation
+
+const pivotObject = THREE.Group()
+scene.add(pivotObject)
 const platformgeometry = new THREE.BoxGeometry(10, 1, 5);
 const platformmaterial = new THREE.MeshBasicMaterial({color: 0x525252});
 const platform = new THREE.Mesh(platformgeometry, platformmaterial);
@@ -24,7 +27,7 @@ const twowallgeometry = new THREE.BoxGeometry(1, 7.5, 4);
 const twowallmaterial = new THREE.MeshBasicMaterial({color: 0xC7C7C7});
 const twowall = new THREE.Mesh(twowallgeometry, twowallmaterial);
 
-scene.add(platform, backwall, onewall, twowall);
+pivotObject.add(platform, backwall, onewall, twowall);
 const exampStage = [platform, backwall, onewall, twowall]
 //platform is already in-position
 
@@ -67,7 +70,7 @@ renderer.domElement.addEventListener("mousemove", (event) => {
     if (!isDragging) return;
 
     const deltaX = event.clientX - previousMousePos.x;
-    scene.rotation.x += deltaX * 0.01;
+    pivotObject.rotation.x += deltaX * 0.01;
 
     previousMousePos = {x: event.clientX, y: event.clientY};
 })
