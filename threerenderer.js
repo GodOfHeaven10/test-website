@@ -34,7 +34,7 @@ twowall.position.set(4.5, 4.25, 0.5)
 
 camera.position.set(-20, 10, 20)
 
-camera.lookAt(platform)
+camera.lookAt(0, 4, 0)
 
 function animate() {
     //cube.rotation.x += 0.01;
