@@ -25,7 +25,7 @@ const twowallmaterial = new THREE.MeshBasicMaterial({color: 0xC7C7C7});
 const twowall = new THREE.Mesh(twowallgeometry, twowallmaterial);
 
 scene.add(platform, backwall, onewall, twowall);
-
+const exampStage = [platform, backwall, onewall, twowall]
 //platform is already in-position
 
 backwall.position.set(0, 4.25, -2)
@@ -39,5 +39,6 @@ camera.lookAt(0, 4, 0)
 function animate() {
     //cube.rotation.x += 0.01;
     //cube.rotation.y += 0.01;
+    scene.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
