@@ -9,7 +9,7 @@ renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 //Platform Creation
 
-const pivotObject = THREE.Group()
+const pivotObject = new THREE.Group()
 scene.add(pivotObject)
 const platformgeometry = new THREE.BoxGeometry(10, 1, 5);
 const platformmaterial = new THREE.MeshBasicMaterial({color: 0x525252});
