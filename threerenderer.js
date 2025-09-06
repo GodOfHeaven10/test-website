@@ -39,6 +39,18 @@ camera.lookAt(0, 4, 0)
 function animate() {
     //cube.rotation.x += 0.01;
     //cube.rotation.y += 0.01;
-    scene.rotation.y += 0.01;
+    //scene.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
+
+document.addEventListener("keydown", (event) => {
+    const keyName = event.key
+
+    if (keyName === "A") {
+        scene.rotation.y -= 0.01;
+        animate()
+    } else if (keyName === "D") {
+        scene.rotation.y += 0.01;
+        animate()
+    }
+})
