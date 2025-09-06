@@ -48,9 +48,9 @@ document.addEventListener("keydown", (event) => {
 
     if (keyName === "A") {
         scene.rotation.y -= 0.01;
-        animate()
+        renderer.render(scene, camera)
     } else if (keyName === "D") {
         scene.rotation.y += 0.01;
-        animate()
+        renderer.render(scene, camera)
     }
 })
