@@ -46,10 +46,10 @@ function animate() {
 document.addEventListener("keydown", (event) => {
     const keyName = event.key
 
-    if (keyName === "A") {
+    if (keyName.toUpperCase === "A") {
         scene.rotation.y -= 0.01;
         renderer.render(scene, camera)
-    } else if (keyName === "D") {
+    } else if (keyName.toUpperCase === "D") {
         scene.rotation.y += 0.01;
         renderer.render(scene, camera)
     }
