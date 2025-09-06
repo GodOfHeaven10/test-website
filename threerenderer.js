@@ -72,8 +72,8 @@ renderer.domElement.addEventListener("mousemove", (event) => {
     const deltaX = event.clientX - previousMousePos.x;
     pivotObject.rotation.y += deltaX * 0.01;
 
-    const deltaX = event.clientY - previousMousePos.y;
-    pivotObject.rotation.x += deltaX * 0.01;
+    const deltaY = event.clientY - previousMousePos.y;
+    pivotObject.rotation.x += deltaY * 0.01;
 
     previousMousePos = {x: event.clientX, y: event.clientY};
 })
