@@ -3,6 +3,7 @@ html, body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body {
     background-image: url("./bg.png");
@@ -80,14 +81,14 @@ h1 {
     margin-left: 10px;
 }
 
-#objects.bottombar {
-    background-color: #1E1E1E;
+#container.bottombar {
+    /* background-color: #1E1E1E;
     border-top: 2.5px solid #191919;
     border-left: 2.5px solid #191919;
     border-right: 2.5px solid #191919;
     border-bottom: none;
     border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 25px; */
     width: 75%; /* 75% */
     height: 0.3055555555555556%; /* 25% ; main bar: 270px, selector: 50px, total: 330px*/
     position: absolute;
@@ -95,6 +96,34 @@ h1 {
     justify-self: center;
 }
 
+#objects.bottombar {
+    position: absolute;
+    background-color: #1E1E1E;
+    border-top: 2.5px solid #191919;
+    border-left: 2.5px solid #191919;
+    border-right: 2.5px solid #191919;
+    border-bottom: none solid #191919;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 81.81818181818182%;
+    width: 100%;
+    bottom: 0;
+}
+
+#selector.bottombar {
+    position: absolute;
+    background-color: #1E1E1E;
+    border-top: 2.5px solid #191919;
+    border-left: 2.5px solid #191919;
+    border-right: 2.5px solid #191919;
+    border-bottom: none solid #191919;
+    height: 15.15151515151515%;
+    width: 100%;
+    top: 0;
+    border-radius: 12.5px;
+}
 
 
 
