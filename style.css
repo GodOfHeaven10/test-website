@@ -82,8 +82,8 @@ h1 {
     border-bottom: none;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    width: 75%;
-    height: 25%;
+    width: 1440px; /* 75% */
+    height: 330px; /* 25% ; main bar: 270px, selector: 50px, total: 330px*/
 }
 
 
