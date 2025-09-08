@@ -1,5 +1,8 @@
-* {
-    overflow: hidden;
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-image: url("./bg.png");
@@ -85,8 +88,11 @@ h1 {
     border-bottom: none;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    width: 1440px; /* 75% */
-    height: 330px; /* 25% ; main bar: 270px, selector: 50px, total: 330px*/
+    width: 75%; /* 75% */
+    height: 0.3055555555555556%; /* 25% ; main bar: 270px, selector: 50px, total: 330px*/
+    position: absolute;
+    bottom: 0;
+    justify-self: center;
 }
 
 
