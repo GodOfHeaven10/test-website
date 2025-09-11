@@ -85,7 +85,9 @@ renderer.domElement.addEventListener("mousemove", (event) => {
 
 renderer.domElement.addEventListener("touchstart", (event) => {
     isDragging = true;
-    previousMousePos = {x: event.clientX, y: event.clientY};
+
+    const touch = event.touches[0]
+    previousMousePos = {x: touch.clientX, y: touch.clientY};
 })
 
 window.addEventListener("touchend", (event) => {
@@ -95,13 +97,17 @@ window.addEventListener("touchend", (event) => {
 renderer.domElement.addEventListener("touchmove", (event) => {
     if (!isDragging) return;
 
-    const deltaX = event.clientX - previousMousePos.x;
+    event.preventDefault()
+
+    const touch = event.touches[0]
+    
+    const deltaX = touch.clientX - previousMousePos.x;
     pivotObject.rotateY(deltaX * 0.01) //+= deltaX * 0.01;
 
-    const deltaY = event.clientY - previousMousePos.y;
+    const deltaY = touch.clientY - previousMousePos.y;
     pivotObject.rotateX(deltaY * 0.01) //+= deltaY * 0.01;
 
-    previousMousePos = {x: event.clientX, y: event.clientY};
+    previousMousePos = {x: touch.clientX, y: touch.clientY};
 })
 
 function animate() {
