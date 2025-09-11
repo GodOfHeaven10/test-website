@@ -6,6 +6,11 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const renderer = new THREE.WebGLRenderer({alpha: true, premultipliedAlpha: false}); //{alpha: true, premultipliedAlpha: false}
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
+renderer.domElement.style.width = "75%";
+renderer.domElement.style.height = "75%";
+renderer.domElement.style.position = "absolute";
+renderer.domElement.style.justifySelf = "center";
+renderer.domElement.style.top = "0";
 document.body.appendChild(renderer.domElement);
 //Platform Creation
 
