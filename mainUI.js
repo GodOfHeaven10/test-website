@@ -1,10 +1,12 @@
 let bottomBarSelector
 
-//for (i in document.body.children) {
-//    if (i.id === "selector" && i.className === "bottombar") {
-//        bottomBarSelector = i
-//    }
-//}
+for (i in document.body.children) {
+    if (i.id === "selector" && i.className === "bottombar") {
+       bottomBarSelector = i
+    }
+}
+
+bottomBarSelector.style.backgroundColor = "#FFF"
 
 const numberOfTypes = 8
 
