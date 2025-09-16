@@ -1,6 +1,6 @@
 let bottomBarSelector = document.querySelector('#selector.bottomBar')
 
-Array.from(bottomBarSelector.children).array.forEach(child => {
+Array.from(bottomBarSelector.children).forEach(child => {
     if (!bottomBarSelector) {
         console.log("bucko")
     } else {
