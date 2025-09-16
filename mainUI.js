@@ -1,13 +1,21 @@
 let bottomBarSelector = document.querySelector('#selector.bottomBar')
 
 Array.from(bottomBarSelector.children).array.forEach(child => {
-    child.addEventListener("mouseenter", (event) => {
-        event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
-    })
+    if (bottomBarSelector) {
+        child.addEventListener("mouseenter", (event) => {
+            event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
+        })
 
-    child.addEventListener("mouseleave", (event) => {
-        event.target.style.backgroundColor = 'transparent'
-    })
+        child.addEventListener("mouseleave", (event) => {
+            event.target.style.backgroundColor = 'transparent'
+        })
+    } else {
+        return
+    }
+    
+    
+    
+    
 });
 
 const numberOfTypes = 8
