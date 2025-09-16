@@ -1,7 +1,9 @@
 let bottomBarSelector = document.querySelector('#selector.bottomBar')
 
 Array.from(bottomBarSelector.children).array.forEach(child => {
-    if (bottomBarSelector) {
+    if (!bottomBarSelector) {
+        console.log("bucko")
+    } else {
         child.addEventListener("mouseenter", (event) => {
             event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
         })
@@ -9,8 +11,6 @@ Array.from(bottomBarSelector.children).array.forEach(child => {
         child.addEventListener("mouseleave", (event) => {
             event.target.style.backgroundColor = 'transparent'
         })
-    } else {
-        return
     }
     
     
