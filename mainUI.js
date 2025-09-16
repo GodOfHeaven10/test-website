@@ -1,12 +1,14 @@
-let bottomBarSelector
+let bottomBarSelector = document.querySelector('#selector.bottomBar')
 
-for (i in document.body.children) {
-    if (i.id === "selector" && i.className === "bottombar") {
-       bottomBarSelector = i
-    }
-}
+Array.from(bottomBarSelector.children).array.forEach(child => {
+    child.addEventListener("mouseenter", (event) => {
+        event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
+    })
 
-bottomBarSelector.style.backgroundColor = "#FFF"
+    child.addEventListener("mouseleave", (event) => {
+        event.target.style.backgroundColor = 'transparent'
+    })
+});
 
 const numberOfTypes = 8
 
