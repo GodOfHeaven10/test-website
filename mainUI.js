@@ -2,11 +2,11 @@ const bottomBarSelector = document.querySelector('#selector.bottombar')
 
 Array.from(bottomBarSelector.children).forEach(child => {
     child.addEventListener("mouseenter", (event) => {
-        event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
+        event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%) !important' 
     })
-    
+
     child.addEventListener("mouseleave", (event) => {
-        event.target.style.backgroundColor = 'transparent'
+        event.target.style.backgroundColor = 'transparent !important'
     })
 });
 
