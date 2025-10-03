@@ -1,6 +1,6 @@
 const bottomBarSelector = document.querySelector('#selector.bottombar')
 
-Array.from(bottomBarSelector.children).forEach(child => {
+bottomBarSelector.children.forEach(child => {
     child.addEventListener("mouseenter", (event) => {
         event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%) !important' 
     })
