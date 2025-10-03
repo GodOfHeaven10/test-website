@@ -1,4 +1,4 @@
-const types = document.querySelector('#selector.type')
+const types = document.querySelector('#selector.bottombar')
 
 /*
 bottomBarSelector.children.forEach(child => {
@@ -13,7 +13,8 @@ bottomBarSelector.children.forEach(child => {
 */
 
 
-const type = new array(types.children)
+const type = Array(types.children)
+
 type.forEach((item) => {
     types.addEventListener("mouseenter", (event) => {
         event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
