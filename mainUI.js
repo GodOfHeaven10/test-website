@@ -13,7 +13,7 @@ bottomBarSelector.children.forEach(child => {
 */
 
 
-const type = Array(types.children)
+const type = Array.from(types.children)
 
 type.forEach((item) => {
     types.addEventListener("mouseenter", (event) => {
