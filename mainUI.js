@@ -16,6 +16,8 @@ bottomBarSelector.children.forEach(child => {
 const type = Array.from(types.children)
 
 type.forEach((item) => {
+    console.log(item)
+    
     item.addEventListener("mouseenter", (event) => {
         event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
     })
