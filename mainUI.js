@@ -1,5 +1,6 @@
-const bottomBarSelector = document.querySelector('#selector.bottombar')
+const types = document.querySelector('#selector.type')
 
+/*
 bottomBarSelector.children.forEach(child => {
     child.addEventListener("mouseenter", (event) => {
         event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%) !important' 
@@ -9,6 +10,17 @@ bottomBarSelector.children.forEach(child => {
         event.target.style.backgroundColor = 'transparent !important'
     })
 });
+*/
+
+types.addEventListener("mouseenter", (event) => {
+    event.target.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
+})
+
+types.addEventListener("mouseleave", (event) => {
+    event.target.style.backgroundColor = 'transparent'
+})
+
+
 
 
 
