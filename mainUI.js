@@ -37,7 +37,7 @@ type.forEach((item) => {
     console.log(item)
     
     item.addEventListener("mouseenter", (event) => {
-        event.currentTarget.style.backgroundColor = 'hsla(0, 100%, 100%, 50%)'
+        event.currentTarget.style.backgroundColor = 'hsla(0, 100%, 100%, 0.5)'
     })
 
     item.addEventListener("mouseleave", (event) => {
