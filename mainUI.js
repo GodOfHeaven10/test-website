@@ -12,8 +12,8 @@ bottomBarSelector.children.forEach(child => {
 });
 */
 
-if (container) {
-    const children = Array.from(container.children);
+if (types) {
+    const children = Array.from(types.children);
 
     children.forEach((item) => {
         console.log(item)
