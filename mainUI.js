@@ -1,4 +1,4 @@
-const types = document.querySelector('#selector.bottombar')
+const container = document.querySelector('#selector.bottombar')
 
 /*
 bottomBarSelector.children.forEach(child => {
@@ -12,8 +12,8 @@ bottomBarSelector.children.forEach(child => {
 });
 */
 
-if (types) {
-    const children = Array.from(types.children);
+if (container) {
+    const children = Array.from(container.children);
 
     children.forEach((item) => {
         console.log(item)
