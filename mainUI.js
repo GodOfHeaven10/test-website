@@ -1,4 +1,4 @@
-const container = document.querySelector('#selector.bottombar')
+const types = document.querySelector('#selector.bottombar')
 
 /*
 bottomBarSelector.children.forEach(child => {
@@ -11,7 +11,7 @@ bottomBarSelector.children.forEach(child => {
     })
 });
 */
-
+/*
 if (container) {
     const children = Array.from(container.children);
 
@@ -29,7 +29,8 @@ if (container) {
 } else {
     console.error("Element not found with selector: #selector.bottombar")
 }
-/*
+*/
+
 const type = Array.from(types.children)
 
 type.forEach((item) => {
@@ -43,7 +44,7 @@ type.forEach((item) => {
         event.currentTarget.style.backgroundColor = 'transparent'
     })
 })
-*/
+
 
 
 
