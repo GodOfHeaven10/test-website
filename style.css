@@ -140,6 +140,12 @@ h1 {
     place-items: center;
 }
 
+#buttons.rightbar {
+    position: absolute;
+    width: 6.51041666666667%;
+    height: 39.35185185185185%;
+}
+
 
 
 
