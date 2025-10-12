@@ -142,8 +142,11 @@ h1 {
 
 #buttons.rightbar {
     position: absolute;
-    width: 6.51041666666667%;
+    width: 06.51041666666667%;
     height: 39.35185185185185%;
+    background-color: #fff;
+    top: 17.77777777777778%;
+    right: 01.30208333333333%;
 }
 
 
