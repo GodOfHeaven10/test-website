@@ -110,6 +110,16 @@ renderer.domElement.addEventListener("touchmove", (event) => {
     previousMousePos = {x: touch.clientX, y: touch.clientY};
 })
 
+function onWindowResize() {
+    const container = renderer.domElement.parentElement; // Or your specific container
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+}
+
 function animate() {
     //cube.rotation.x += 0.01;
     //cube.rotation.y += 0.01;
@@ -117,4 +127,7 @@ function animate() {
     renderer.render(scene, camera);
     requestAnimationFrame(animate)
 }
+
+onWindowResize()
+
 animate()
