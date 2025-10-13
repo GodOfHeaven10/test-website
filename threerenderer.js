@@ -115,8 +115,8 @@ renderer.domElement.addEventListener("touchmove", (event) => {
 })
 
 function onWindowResize() {
-    const width = threescene.clientWidth;
-    const height = threescene.clientHeight;
+    const width = threescene.clientWidth * 0.75; //threescene.clientWidth
+    const height = threescene.clientHeight * 0.75;
     
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
