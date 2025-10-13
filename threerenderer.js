@@ -8,7 +8,7 @@ threescene.id = 'three'
 document.body.appendChild(threescene)
 
 const renderer = new THREE.WebGLRenderer({alpha: true, premultipliedAlpha: false}); //{alpha: true, premultipliedAlpha: false}
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(threescene.innerWidth, threescene.innerHeight);
 renderer.setAnimationLoop(animate);
 threescene.style.width = "75%";
 threescene.style.height = "75%";
