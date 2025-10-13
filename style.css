@@ -156,8 +156,7 @@ div#animate-button.rightbar {
     top: 17.77777777777778%;
     right: 01.30208333333333%;
     background-color: #1E1E1E;
-    outline-color: #191919;
-    outline-width: 2.5px;
+    outline: 2.5px solid #191919;
     border-radius: calc(125px / 10);
     width: 6.510416666666667vw;
     height: 6.510416666666667vw;
