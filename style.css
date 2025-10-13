@@ -162,8 +162,14 @@ div#animate-button.rightbar {
     width: 6.510416666666667vw;
     height: 6.510416666666667vw;
     font-family: "Quicksand", sans-serif;
-    text-align: center;
-    vertical-align: bottom;
+    /* text-align: center;
+    vertical-align: bottom; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 1.25vw;
+    color: #FFF;
 }
 
 
