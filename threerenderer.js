@@ -3,15 +3,19 @@ import * as THREE from 'three';
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
+const threescene = document.createElement("div");
+threescene.id = 'three'
+document.body.appendChild(threescene)
+
 const renderer = new THREE.WebGLRenderer({alpha: true, premultipliedAlpha: false}); //{alpha: true, premultipliedAlpha: false}
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
-renderer.domElement.style.width = "75%";
-renderer.domElement.style.height = "75%";
-renderer.domElement.style.position = "absolute";
-renderer.domElement.style.justifySelf = "center";
-renderer.domElement.style.top = "0";
-document.body.appendChild(renderer.domElement);
+threescene.style.width = "75%";
+threescene.style.height = "75%";
+threescene.style.position = "absolute";
+threescene.style.justifySelf = "center";
+threescene.style.top = "0";
+threescene.appendChild(renderer.domElement);
 //Platform Creation
 
 const pivotObject = new THREE.Group()
@@ -111,9 +115,8 @@ renderer.domElement.addEventListener("touchmove", (event) => {
 })
 
 function onWindowResize() {
-    const container = renderer.domElement.parentElement; // Or your specific container
-    const width = container.clientWidth;
-    const height = container.clientHeight;
+    const width = threescene.clientWidth;
+    const height = threescene.clientHeight;
     
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
