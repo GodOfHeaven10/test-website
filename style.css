@@ -154,10 +154,10 @@ h1 {
 /* animate */
 div#sidebuttons.rightbar {
     position: absolute;
-    top: 17.77777777777778vw;
-    right: 01.30208333333333vh;
-    height: 39.35185185185185%;
-    width: 6.510416666666667%;
+    top: 17.77777777777778vh;
+    right: 01.30208333333333vw;
+    height: 39.35185185185185vh;
+    width: 6.510416666666667vw;
 }
 
 div#sidebuttons.rightbar div#animate-button.rightbar {
@@ -167,8 +167,8 @@ div#sidebuttons.rightbar div#animate-button.rightbar {
     background-color: #1E1E1E;
     outline: 2.5px solid #191919;
     border-radius: calc(125px / 10);
-    width: 100%;
-    height: 29.41176470588235%;
+    width: 11.57407407407407vh;
+    height: 11.57407407407407vh;
     font-family: "Quicksand", sans-serif;
     /* text-align: center;
     vertical-align: bottom; */
@@ -197,8 +197,8 @@ div#sidebuttons.rightbar div#objects-button.rightbar {
     background-color: #1E1E1E;
     outline: 2.5px solid #191919;
     border-radius: calc(125px / 10);
-    width: 100%;
-    height: 29.41176470588235%;
+    width: 11.57407407407407vh;
+    height: 11.57407407407407vh;
     font-family: "Quicksand", sans-serif;
     /* text-align: center;
     vertical-align: bottom; */
@@ -216,6 +216,36 @@ div#sidebuttons.rightbar div#objects-button.rightbar img#objects-button.image {
     position: absolute;
     top: 0%;
     left: 12.5%;
+}
+
+/* audio */
+
+div#sidebuttons.rightbar div#audio-button.rightbar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #1E1E1E;
+    outline: 2.5px solid #191919;
+    border-radius: calc(125px / 10);
+    width: 11.57407407407407vh;
+    height: 11.57407407407407vh;
+    font-family: "Quicksand", sans-serif;
+    /* text-align: center;
+    vertical-align: bottom; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 1.25vw;
+    color: #FFF;
+}
+
+div#sidebuttons.rightbar div#audio-button.rightbar img#audio-button.image {
+    width: 83.2%;
+    height: 49.6%;
+    position: absolute;
+    top: 12%;
+    left: 7.2%;
 }
 
 
