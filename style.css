@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     overflow: hidden;
 }
+
 body {
     background-image: url("./bg.png");
     background-size: cover;
