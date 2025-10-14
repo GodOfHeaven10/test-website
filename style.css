@@ -171,6 +171,14 @@ div#animate-button.rightbar {
     color: #FFF;
 }
 
+div#animate-button.rightbar img#animate-button.image {
+    width: 72%;
+    height: 44.8%;
+    position: absolute;
+    top: 15.2%;
+    left: 14.2%;
+}
+
 
 
 
