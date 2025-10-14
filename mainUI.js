@@ -47,6 +47,7 @@ type.forEach((item) => {
 
 function showOrientationWarning() {
     const warning = document.createElement('div');
+    warning.setAttribute('data-orientation-warning', 'true')
     warning.innerHTML = '🔄 Please rotate your device to landscape for the best experience';
     warning.style.cssText = `
         position: fixed;
@@ -68,16 +69,21 @@ function showOrientationWarning() {
 }
 
 function checkOrientation() {
-    const isPortrait = window.innerHeight < window.innerWidth
+    const isPortrait = window.innerHeight > window.innerWidth
 
     if (isPortrait) {
         showOrientationWarning()
+    } else {
+        const existingWarning = document.querySelector('[data-orientation-warning]')
+        if (existingWarning) {
+            existingWarning.remove()
+        }
     }
 }
 
 checkOrientation()
 
-window.addEventListener('resize' checkOrientation)
+window.addEventListener('resize', checkOrientation)
 
 document.addEventListener('DOMContentLoaded', checkOrientation)
 
