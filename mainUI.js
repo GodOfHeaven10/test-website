@@ -67,6 +67,12 @@ function showOrientationWarning() {
         font-size: 1.5em;
         text-align: center;
         padding: 20px;
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        -webkit-touch-callout: none
+        -webkit-tap-highlight-color: transparent
     `;
     document.body.appendChild(warning);
 }

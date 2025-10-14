@@ -9,6 +9,12 @@ body {
     background-image: url("./bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 h1 {
