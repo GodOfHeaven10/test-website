@@ -151,6 +151,8 @@ h1 {
 }
 */
 
+/* animate */
+
 div#animate-button.rightbar {
     position: absolute;
     top: 17.77777777777778%;
@@ -177,6 +179,36 @@ div#animate-button.rightbar img#animate-button.image {
     position: absolute;
     top: 15.2%;
     left: 14.2%;
+}
+
+/* objects; no clue about it yet */
+
+div#objects-button.rightbar {
+    position: absolute;
+    top: 31.66666666666667%;
+    right: 01.30208333333333%;
+    background-color: #1E1E1E;
+    outline: 2.5px solid #191919;
+    border-radius: calc(125px / 10);
+    width: 6.510416666666667vw;
+    height: 6.510416666666667vw;
+    font-family: "Quicksand", sans-serif;
+    /* text-align: center;
+    vertical-align: bottom; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 1.25vw;
+    color: #FFF;
+}
+
+div#objects-button.rightbar img#objects-button.image {
+    width: 89.112%;
+    height: 74.376%;
+    position: absolute;
+    top: 0%;
+    left: 12.5%;
 }
 
 
