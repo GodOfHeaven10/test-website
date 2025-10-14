@@ -45,7 +45,9 @@ type.forEach((item) => {
     })
 })
 
-
+if (screen.orientation.type.includes('portrait')) {
+    showOrientationWarning()
+}
 
 
 
