@@ -45,15 +45,41 @@ type.forEach((item) => {
     })
 })
 
-if (screen.orientation.type.includes('portrait')) {
-    showOrientationWarning()
+function showOrientationWarning() {
+    const warning = document.createElement('div');
+    warning.innerHTML = '🔄 Please rotate your device to landscape for the best experience';
+    warning.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 20px;
+    `;
+    document.body.appendChild(warning);
 }
 
-screen.orientation.addEventListener('change', () => {
-  console.log('Orientation:', screen.orientation.type);
-});
+function checkOrientation() {
+    const isPortrait = window.innerHeight < window.innerWidth
 
+    if (isPortrait) {
+        showOrientationWarning()
+    }
+}
 
+checkOrientation()
+
+window.addEventListener('resize' checkOrientation)
+
+document.addEventListener('DOMContentLoaded', checkOrientation)
 
 
 const numberOfTypes = 8
