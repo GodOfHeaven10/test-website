@@ -85,7 +85,7 @@ checkOrientation()
 
 window.addEventListener('resize', checkOrientation)
 
-document.addEventListener('DOMContentLoaded', checkOrientation)
+// document.addEventListener('DOMContentLoaded', checkOrientation)
 
 
 
