@@ -49,6 +49,10 @@ if (screen.orientation.type.includes('portrait')) {
     showOrientationWarning()
 }
 
+screen.orientation.addEventListener('change', () => {
+  console.log('Orientation:', screen.orientation.type);
+});
+
 
 
 
