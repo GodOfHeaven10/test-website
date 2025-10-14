@@ -45,6 +45,8 @@ type.forEach((item) => {
     })
 })
 
+let warningShown = false
+
 function showOrientationWarning() {
     const warning = document.createElement('div');
     warning.setAttribute('data-orientation-warning', 'true')
@@ -71,21 +73,21 @@ function showOrientationWarning() {
 function checkOrientation() {
     const isPortrait = window.innerHeight > window.innerWidth
 
-    if (isPortrait) {
+    if (isPortrait && !warningShown) {
         showOrientationWarning()
+        warningShown = true
     } else {
         const existingWarning = document.querySelector('[data-orientation-warning]')
-        if (existingWarning) {
-            existingWarning.remove()
-        }
+        if (existingWarning) existingWarning.remove()
+        warningShown = false
     }
 }
 
-checkOrientation()
+// checkOrientation()
 
 window.addEventListener('resize', checkOrientation)
 
-// document.addEventListener('DOMContentLoaded', checkOrientation)
+document.addEventListener('DOMContentLoaded', checkOrientation)
 
 
 
