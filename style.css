@@ -152,16 +152,23 @@ h1 {
 */
 
 /* animate */
-
-div#animate-button.rightbar {
+div#sidebuttons.rightbar {
     position: absolute;
-    top: 17.77777777777778%;
-    right: 01.30208333333333%;
+    top: 17.77777777777778vw;
+    right: 01.30208333333333vh;
+    height: 39.35185185185185%;
+    width: 6.510416666666667%;
+}
+
+div#sidebuttons.rightbar div#animate-button.rightbar {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #1E1E1E;
     outline: 2.5px solid #191919;
     border-radius: calc(125px / 10);
-    width: 6.510416666666667vw;
-    height: 6.510416666666667vw;
+    width: 100%;
+    height: 29.41176470588235%;
     font-family: "Quicksand", sans-serif;
     /* text-align: center;
     vertical-align: bottom; */
@@ -173,7 +180,7 @@ div#animate-button.rightbar {
     color: #FFF;
 }
 
-div#animate-button.rightbar img#animate-button.image {
+div#sidebuttons.rightbar div#animate-button.rightbar img#animate-button.image {
     width: 72%;
     height: 44.8%;
     position: absolute;
@@ -183,15 +190,15 @@ div#animate-button.rightbar img#animate-button.image {
 
 /* objects; no clue about it yet */
 
-div#objects-button.rightbar {
+div#sidebuttons.rightbar div#objects-button.rightbar {
     position: absolute;
-    top: 31.66666666666667%;
-    right: 01.30208333333333%;
+    top: 35.29411764705882%;
+    right: 0;
     background-color: #1E1E1E;
     outline: 2.5px solid #191919;
     border-radius: calc(125px / 10);
-    width: 6.510416666666667vw;
-    height: 6.510416666666667vw;
+    width: 100%;
+    height: 29.41176470588235%;
     font-family: "Quicksand", sans-serif;
     /* text-align: center;
     vertical-align: bottom; */
@@ -203,7 +210,7 @@ div#objects-button.rightbar {
     color: #FFF;
 }
 
-div#objects-button.rightbar img#objects-button.image {
+div#sidebuttons.rightbar div#objects-button.rightbar img#objects-button.image {
     width: 89.112%;
     height: 74.376%;
     position: absolute;
