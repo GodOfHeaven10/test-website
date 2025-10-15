@@ -101,5 +101,17 @@ window.addEventListener('resize', checkOrientation)
 
 setTimeout(checkOrientation, 500)
 
+const animateUI = querySelector("div#container.animate")
+const animateUIButton = querySelector("div#sidebuttons.rightbar div#animate-button.rightbar")
 
+let AnimateInterval
 
+animateUIButton.addEventListener('click', (event) => {
+    if (!AnimateInterval == 1) {
+        animateUI.style.visibility = "visible"
+        AnimateInterval = 1
+    } else {
+        animateUI.style.visibility = "hidden"
+        AnimateInterval = 0
+    }
+})

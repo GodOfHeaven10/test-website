@@ -264,6 +264,7 @@ div#container.animate {
     align-self: anchor-center;
     z-index: 101;
     position: absolute;
+    visibility: hidden;
 }
 
 div#container.animate div#animate.animate-buttons-container {
