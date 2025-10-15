@@ -262,6 +262,7 @@ div#container.animate {
     height: 57.90092592592593vh;
     justify-self: center;
     align-self: center;
+    z-index: 101;
 }
 
 div#container.animate div#animate.animate-buttons-container {
