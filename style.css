@@ -255,8 +255,33 @@ div#sidebuttons.rightbar div#audio-button.rightbar img#audio-button.image {
     left: 7.2%;
 }
 
+/* animate UI */
 
+div#container.animate {
+    width: 56.25vw;
+    height: 57.90092592592593vh;
+    justify-self: center;
+    align-self: center;
+}
 
+div#container.animate div#animate.animate-buttons-container {
+    width: 49.35185185185185%;
+    height: 13.32576399660979%;
+}
+
+div#container.animate div#selected-objects.animate-div {
+    width: 32.40740740740741%;
+    height: 83.9556714054979%;
+    border-radius: 04.76285714285714%;
+    outline: 2.5px solid #191919;
+}
+
+div#container.animate div#timeline.animate-div {
+    width: 66.04907407407407%;
+    height: 84.00844354180992%;
+    border-radius: 04.76285714285714%;
+    outline: 2.5px solid #191919;
+}
 
 
 
