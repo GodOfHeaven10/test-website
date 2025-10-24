@@ -354,6 +354,75 @@ div#container.animation-types {
     visibility: hidden;
 }
 
+div#container.animation-types div.animation-type img{    
+    width: 2.314814814814815vh;
+    height: 2.314814814814815vh;
+}
+
+div#container.animation-types div.animation-type#color {
+    font-size: 1.25vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 8.489583333333333vw;
+    height: 2.314814814814815vh;
+    top: 35.55555555555556vh;
+    left: 30.98958333333333vw;
+}
+
+div#container.animation-types div.animation-type#orientation {
+    font-size: 1.25vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 8.489583333333333vw;
+    height: 2.314814814814815vh;
+    top: 38.7962962962963vh;
+    left: 30.98958333333333vw;
+}
+
+div#container.animation-types div.animation-type#type {
+    font-size: 1.25vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 8.489583333333333vw;
+    height: 2.314814814814815vh;
+    top: 42.03703703703704vh;
+    left: 30.98958333333333vw;
+}
+
+div#container.animation-types div.animation-type#onoff {
+    font-size: 1.25vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 8.489583333333333vw;
+    height: 2.314814814814815vh;
+    top: 45.27777777777778vh;
+    left: 30.98958333333333vw;
+}
+
+div#container.animation-types div.animation-type#pyro {
+    font-size: 1.25vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 8.489583333333333vw;
+    height: 2.314814814814815vh;
+    top: 48.51851851851852vh;
+    left: 30.98958333333333vw;
+}
+
+
+
+
+
+
+
+
+
+
 /* beat maker UI */
 
 div#container.beat-maker {
