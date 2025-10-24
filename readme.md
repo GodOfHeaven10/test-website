@@ -1,5 +1,9 @@
-This is a demo
+# **REDACTED**
 
-**What is this?**
+This [REDACTED] project is soon complete.
 
-This test is for an animator. Animator is used in another project.
+### **If you have any INFO, then please don't share it. What you know is best kept to yourself**
+
+## **Tutorial/Guide**
+
+ The **Tutorial** will be made once the [REDACTED] project is done.
