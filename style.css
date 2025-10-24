@@ -304,11 +304,13 @@ div#container.animate div#animate.animate-buttons-container div.animate-button {
     position: absolute;
     width: 08.68072916666667vw;
     height: 07.71574074074074vh;
-    text-align: center;
-    font-size: calc(32px / 83.33 * 100);
+    font-size: 1.666665vw;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     color: #FFFFFF;
+    justify-items: center;
+    align-items: center;
+    display: flex;
 }
 
 div#container.animate div#animate.animate-buttons-container div#animate.animate-button {
