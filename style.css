@@ -308,7 +308,7 @@ div#container.animate div#animate.animate-buttons-container div.animate-button {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     color: #FFFFFF;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     display: flex;
 }
