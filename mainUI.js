@@ -165,7 +165,7 @@ beatMakerButton.addEventListener('click', (event) => {
     }
 
     if (animationTypeButtonInterval) {
-            animateUI.style.visibility = "hidden"
+            animationTypeUI.style.visibility = "hidden"
             animationTypeButtonInterval = false
     }
     
