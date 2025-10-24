@@ -131,9 +131,11 @@ animateUIButton.addEventListener('click', (event) => {
     }
 
     if (animationTypeButtonInterval) {
-            animationTypeUI.style.visibility = "hidden"
+            animateUI.style.visibility = "hidden"
             animationTypeButtonInterval = false
-        } else if (beatMakerInterval) {
+    }
+    
+    if (beatMakerInterval) {
             beatMakerUI.style.visibility = "hidden"
             beatMakerInterval = false
     }
@@ -163,9 +165,11 @@ beatMakerButton.addEventListener('click', (event) => {
     }
 
     if (animationTypeButtonInterval) {
-            animationTypeUI.style.visibility = "hidden"
+            animateUI.style.visibility = "hidden"
             animationTypeButtonInterval = false
-        } else if (AnimateInterval) {
+    }
+    
+    if (AnimateInterval) {
             animateUI.style.visibility = "hidden"
             AnimateInterval = false
     }
