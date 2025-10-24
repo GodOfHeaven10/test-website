@@ -154,7 +154,7 @@ beatMakerButton.addEventListener('click', (event) => {
         beatMakerUI.style.visibility = "visible"
         beatMakerInterval = true
     } else {
-        beatMakerUI.style.visibility = "visible"
+        beatMakerUI.style.visibility = "hidden"
         beatMakerInterval = false
 
         if (animationTypeButtonInterval) {
