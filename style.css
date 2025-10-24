@@ -311,6 +311,7 @@ div#container.animate div#animate.animate-buttons-container div.animate-button {
     justify-content: center;
     align-items: center;
     display: flex;
+    text-align: center;
 }
 
 div#container.animate div#animate.animate-buttons-container div#animate.animate-button {
@@ -334,11 +335,14 @@ div#container.animation-types {
     outline: 3.33px solid #242424;
     border-radius: calc(125px / 10);
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     font-size: 0.83333333333333vw;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     z-index: 102;
-    visibility: hidden;
+    position: absolute;
+    color: #FFF;
+    top: 30.27777777777778vh;
+    left: 27.96875vw;
 }
