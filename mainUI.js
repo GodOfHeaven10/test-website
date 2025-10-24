@@ -146,14 +146,6 @@ animationTypeButton.addEventListener('click', (event) => {
     } else {
         animationTypeUI.style.visibility = "hidden"
         animationTypeButtonInterval = false
-
-        if (AnimateInterval) {
-            animateUI.style.visibility = "hidden"
-            AnimateInterval = false
-        } else if (beatMakerInterval) {
-            beatMakerUI.style.visibility = "hidden"
-            beatMakerInterval = false
-        }
     }
 })
 
