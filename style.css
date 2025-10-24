@@ -340,4 +340,5 @@ div#container.animation-types {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     z-index: 102;
+    visibility: hidden;
 }

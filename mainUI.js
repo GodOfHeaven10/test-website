@@ -1,11 +1,6 @@
 const types = document.querySelector('#selector.bottombar')
 
-const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
-const animationTypeUI = document.querySelector
 
-animationTypeButton.addEventListener('click', (event) => {
-
-})
 
 
 
@@ -124,5 +119,20 @@ animateUIButton.addEventListener('click', (event) => {
     } else {
         animateUI.style.visibility = "hidden"
         AnimateInterval = false
+    }
+})
+
+const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
+const animationTypeUI = document.querySelector
+
+let animationTypeButtonInterval
+
+animationTypeButton.addEventListener('click', (event) => {
+    if (!animationTypeButtonInterval) {
+        animationTypeUI.style.visibility = "visible"
+        animationTypeButtonInterval = true
+    } else {
+        animationTypeUI.style.visibility = "hidden"
+        animationTypeButtonInterval = false
     }
 })
