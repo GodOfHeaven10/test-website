@@ -297,6 +297,31 @@ div#container.animate div#timeline.animate-div {
     background-color: #1E1E1E;
 }
 
+div#container.animate div#animate.animate-buttons-container div.animate-button {
+    background-color: #1E1E1E;
+    outline: 2.5px solid #191919;
+    border-radius: calc(125px / 10);
+    position: absolute;
+    width: 08.68072916666667vw;
+    height: 07.71574074074074vh;
+    text-align: center;
+    font-size: calc(32px / 83.33 * 100);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+div#container.animate div#animate.animate-buttons-container div#animate.animate-button {
+    left: 0;
+}
+
+div#container.animate div#animate.animate-buttons-container div#triggers.animate-button {
+    align-self: center;
+}
+
+div#container.animate div#animate.animate-buttons-container div#settings.animate-button {
+    right: 0;
+}
 
 
 
