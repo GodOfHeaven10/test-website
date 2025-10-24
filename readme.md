@@ -7,5 +7,3 @@ This [REDACTED] project is soon complete.
 ## **Tutorial/Guide**
 
  The **Tutorial** will be made once the [REDACTED] project is done.
-
-<span style="color:red;">Red text</span>

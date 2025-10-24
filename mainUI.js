@@ -111,9 +111,12 @@ const animateUI = document.querySelector("div#container.animate")
 const animateUIButton = document.querySelector("div#sidebuttons.rightbar div#animate-button.rightbar")
 const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
 const animationTypeUI = document.querySelector('div#container.animation-types')
+const beatMakerButton = document.querySelector('div#sidebuttons.rightbar div#audio-button.rightbar')
+const beatMakerUI = document.querySelector('div#container.beat-maker')
 
 let AnimateInterval
 let animationTypeButtonInterval
+let beatMakerInterval
 
 
 animateUIButton.addEventListener('click', (event) => {
@@ -127,6 +130,9 @@ animateUIButton.addEventListener('click', (event) => {
         if (animationTypeButtonInterval) {
             animationTypeUI.style.visibility = "hidden"
             animationTypeButtonInterval = false
+        } else if (beatMakerInterval) {
+            beatMakerUI.style.visibility = "hidden"
+            beatMakerInterval = false
         }
     }
 })
@@ -140,5 +146,31 @@ animationTypeButton.addEventListener('click', (event) => {
     } else {
         animationTypeUI.style.visibility = "hidden"
         animationTypeButtonInterval = false
+
+        if (AnimateInterval) {
+            animateUI.style.visibility = "hidden"
+            AnimateInterval = false
+        } else if (beatMakerInterval) {
+            beatMakerUI.style.visibility = "hidden"
+            beatMakerInterval = false
+        }
+    }
+})
+
+beatMakerButton.addEventListener('click', (event) => {
+    if (!beatMakerInterval) {
+        beatMakerUI.style.visibility = "visible"
+        beatMakerInterval = true
+    } else {
+        beatMakerUI.style.visibility = "visible"
+        beatMakerInterval = false
+
+        if (animationTypeButtonInterval) {
+            animationTypeUI.style.visibility = "hidden"
+            animationTypeButtonInterval = false
+        } else if (AnimateInterval) {
+            animateUI.style.visibility = "hidden"
+            AnimateInterval = false
+        }
     }
 })
