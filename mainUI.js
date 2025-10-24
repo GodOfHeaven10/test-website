@@ -123,7 +123,7 @@ animateUIButton.addEventListener('click', (event) => {
 })
 
 const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
-const animationTypeUI = document.querySelector
+const animationTypeUI = document.querySelector('div#container.animation-types')
 
 let animationTypeButtonInterval
 
