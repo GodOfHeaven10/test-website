@@ -345,4 +345,5 @@ div#container.animation-types {
     color: #FFF;
     top: 30.27777777777778vh;
     left: 27.96875vw;
+    visibility: hidden;
 }
