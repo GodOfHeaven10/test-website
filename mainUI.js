@@ -1,5 +1,14 @@
 const types = document.querySelector('#selector.bottombar')
 
+const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
+const animationTypeUI = document.querySelector
+
+animationTypeButton.addEventListener('click', (event) => {
+
+})
+
+
+
 /*
 bottomBarSelector.children.forEach(child => {
     child.addEventListener("mouseenter", (event) => {
@@ -31,6 +40,7 @@ if (container) {
 }
 */
 
+/*
 const type = Array.from(types.children)
 
 type.forEach((item) => {
@@ -44,6 +54,7 @@ type.forEach((item) => {
         event.currentTarget.style.backgroundColor = 'transparent'
     })
 })
+*/
 
 let warningShown = false
 let orientationCheckTimeout

@@ -279,7 +279,7 @@ div#container.animate div#selected-objects.animate-div {
     width: 32.40740740740741%;
     height: 83.9556714054979%;
     border-radius: calc(125px / 10);
-    outline: 2.5px solid #191919;
+    outline: 3.33px solid #191919;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -290,7 +290,7 @@ div#container.animate div#timeline.animate-div {
     width: 66.04907407407407%;
     height: 84.00844354180992%;
     border-radius: calc(125px / 10);
-    outline: 2.5px solid #191919;
+    outline: 3.33px solid #191919;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -299,7 +299,7 @@ div#container.animate div#timeline.animate-div {
 
 div#container.animate div#animate.animate-buttons-container div.animate-button {
     background-color: #1E1E1E;
-    outline: 2.5px solid #191919;
+    outline: 3.33px solid #191919;
     border-radius: calc(125px / 10);
     position: absolute;
     width: 08.68072916666667vw;
@@ -317,7 +317,7 @@ div#container.animate div#animate.animate-buttons-container div#animate.animate-
     left: 0;
 }
 
-div#container.animate div#animate.animate-buttons-container div#triggers.animate-button {
+div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button {
     justify-self: center;
 }
 
@@ -325,18 +325,19 @@ div#container.animate div#animate.animate-buttons-container div#settings.animate
     right: 0;
 }
 
+/* animation type UI */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+div#container.animation-types {
+    width: 15.625vw;
+    height: 23.14814814814815vh;
+    background-color: #292929;
+    outline: 3.33px solid #242424;
+    border-radius: calc(125px / 10);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.83333333333333vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    z-index: 102;
+}
