@@ -320,6 +320,7 @@ div#container.animate div#animate.animate-buttons-container div#animate.animate-
 
 div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button {
     justify-self: center;
+    font-size: 1.5625vw;
 }
 
 div#container.animate div#animate.animate-buttons-container div#settings.animate-button {

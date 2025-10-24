@@ -109,8 +109,12 @@ setTimeout(checkOrientation, 500)
 
 const animateUI = document.querySelector("div#container.animate")
 const animateUIButton = document.querySelector("div#sidebuttons.rightbar div#animate-button.rightbar")
+const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
+const animationTypeUI = document.querySelector('div#container.animation-types')
 
 let AnimateInterval
+let animationTypeButtonInterval
+
 
 animateUIButton.addEventListener('click', (event) => {
     if (!AnimateInterval) {
@@ -119,13 +123,15 @@ animateUIButton.addEventListener('click', (event) => {
     } else {
         animateUI.style.visibility = "hidden"
         AnimateInterval = false
+
+        if (animationTypeButtonInterval) {
+            animationTypeUI.style.visibility = "hidden"
+            animationTypeButtonInterval = false
+        }
     }
 })
 
-const animationTypeButton = document.querySelector('div#container.animate div#animate.animate-buttons-container div#animation-types.animate-button')
-const animationTypeUI = document.querySelector('div#container.animation-types')
 
-let animationTypeButtonInterval
 
 animationTypeButton.addEventListener('click', (event) => {
     if (!animationTypeButtonInterval) {
