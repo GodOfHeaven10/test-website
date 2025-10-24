@@ -360,6 +360,11 @@ div#container.beat-maker {
     width: 67.5vw;
     height: 69.48148148148148vh;
     visibility: hidden;
+    z-index: 103;
+    align-self: anchor-center;
+    justify-self: center;
+    display: flex;
+    position: absolute;
 }
 
 div#container.beat-maker div#label.beat-maker {
@@ -370,11 +375,12 @@ div#container.beat-maker div#label.beat-maker {
     font-weight: 700;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     color: #FFF;
     background-color: #1E1E1E;
     outline: 4px solid #191919;
     border-radius: calc(125px * 0.16);
+    position: absolute;
 }
 
 div#container.beat-maker div#label.beat-maker div#label.beat-maker-tiny-info {
@@ -382,10 +388,14 @@ div#container.beat-maker div#label.beat-maker div#label.beat-maker-tiny-info {
     height: 2.66666666666667vh;
     position: absolute;
     right: 0;
-    bottom: 0;
     font-size: 0.5vw;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
+    display: flex;
+    align-content: center;
+    align-self: end;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 div#container.beat-maker div#beat-maker-div.beat-maker-instruments {
@@ -408,5 +418,7 @@ div#container.beat-maker div#beat-maker-div.beat-maker-timeline {
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: 103;
+    align-self: start;
+    justify-self: end;
+    align-items: flex-end;
 }
