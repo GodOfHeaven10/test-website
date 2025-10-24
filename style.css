@@ -414,7 +414,33 @@ div#container.animation-types div.animation-type#pyro {
     left: 19.33333333333333%;
 }
 
+/* images */
 
+div#container.animation-types div.animation-type#color img {
+    top: 22.8%;
+    left: 7.666666666666667%;
+}
+
+div#container.animation-types div.animation-type#orientation img {
+    top: 36.8%;
+    left: 7.666666666666667%;
+}
+
+div#container.animation-types div.animation-type#type img {
+    top: 50.8%;
+    left: 7.666666666666667%;
+}
+
+div#container.animation-types div.animation-type#onoff img {
+    top: 64.8%;
+    left: 7.666666666666667%;
+}
+
+div#container.animation-types div.animation-type#pyro img {
+    top: 78.8%;
+    left: 7.666666666666667%;
+    width: 29.27083333333333vw;
+}
 
 
 
