@@ -412,38 +412,40 @@ div#container.animation-types div.animation-type#pyro {
     height: 2.314814814814815vh;
     top: 78.8%;
     left: 19.33333333333333%;
+    display: flex;
+    align-items: center;
 }
 
 /* images */
 
 div#container.animation-types div.animation-type#color img {
     position: absolute;
-    top: 22.8%;
-    left: 7.666666666666667%;
+    /* top: 22.8%; */
+    left: -20.79141104294479%;
 }
 
 div#container.animation-types div.animation-type#orientation img {
     position: absolute;
-    top: 36.8%;
-    left: 7.666666666666667%;
+    /* top: 36.8%; */
+    left: -20.79141104294479%;
 }
 
 div#container.animation-types div.animation-type#type img {
     position: absolute;
-    top: 50.8%;
-    left: 7.666666666666667%;
+    /* top: 50.8%; */
+    left: -20.79141104294479%;
 }
 
 div#container.animation-types div.animation-type#onoff img {
     position: absolute;
-    top: 64.8%;
-    left: 7.666666666666667%;
+    /* top: 64.8%; */
+    left: -20.79141104294479%;
 }
 
 div#container.animation-types div.animation-type#pyro img {
     position: absolute;
-    top: 78.8%;
-    left: 7.666666666666667%;
+    /* top: 78.8%; */
+    left: -18.79141104294479%;
     width: 1.041666666666667vw;
 }
 
