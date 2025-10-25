@@ -368,6 +368,8 @@ div#container.animation-types div.animation-type#color {
     height: 2.314814814814815vh;
     top: 22.8%;
     left: 19.33333333333333%;
+    display: flex;
+    align-items: center;
 }
 
 div#container.animation-types div.animation-type#orientation {
@@ -379,6 +381,8 @@ div#container.animation-types div.animation-type#orientation {
     height: 2.314814814814815vh;
     top: 36.8%;
     left: 19.33333333333333%;
+    display: flex;
+    align-items: center;
 }
 
 div#container.animation-types div.animation-type#type {
@@ -390,6 +394,8 @@ div#container.animation-types div.animation-type#type {
     height: 2.314814814814815vh;
     top: 50.8%;
     left: 19.33333333333333%;
+    display: flex;
+    align-items: center;
 }
 
 div#container.animation-types div.animation-type#onoff {
@@ -401,6 +407,8 @@ div#container.animation-types div.animation-type#onoff {
     height: 2.314814814814815vh;
     top: 64.8%;
     left: 19.33333333333333%;
+    display: flex;
+    align-items: center;
 }
 
 div#container.animation-types div.animation-type#pyro {
@@ -414,6 +422,8 @@ div#container.animation-types div.animation-type#pyro {
     left: 19.33333333333333%;
     display: flex;
     align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 /* images */
@@ -421,31 +431,31 @@ div#container.animation-types div.animation-type#pyro {
 div#container.animation-types div.animation-type#color img {
     position: absolute;
     /* top: 22.8%; */
-    left: -20.79141104294479%;
+    left: -21.47239263803681%;
 }
 
 div#container.animation-types div.animation-type#orientation img {
     position: absolute;
     /* top: 36.8%; */
-    left: -20.79141104294479%;
+    left: -21.47239263803681%;
 }
 
 div#container.animation-types div.animation-type#type img {
     position: absolute;
     /* top: 50.8%; */
-    left: -20.79141104294479%;
+    left: -21.47239263803681%;
 }
 
 div#container.animation-types div.animation-type#onoff img {
     position: absolute;
     /* top: 64.8%; */
-    left: -20.79141104294479%;
+    left: -21.47239263803681%;
 }
 
 div#container.animation-types div.animation-type#pyro img {
     position: absolute;
     /* top: 78.8%; */
-    left: -18.79141104294479%;
+    left: -19.93865030674847%;
     width: 1.041666666666667vw;
 }
 

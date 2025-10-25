@@ -35,7 +35,7 @@ if (container) {
 }
 */
 
-/*
+
 const type = Array.from(types.children)
 
 type.forEach((item) => {
@@ -49,7 +49,7 @@ type.forEach((item) => {
         event.currentTarget.style.backgroundColor = 'transparent'
     })
 })
-*/
+
 
 let warningShown = false
 let orientationCheckTimeout
