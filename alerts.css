@@ -8,6 +8,7 @@ div#disablement.alert {
     align-self: center;
     position: relative;
     top: 31.48148148148148vh;
+    z-index: 99;
 }
 
 div#disablement.alert div#header {
